@@ -177,12 +177,12 @@ void showParsedData() {
 
 void XYlaser_data() {
 
-Z_Pos = (LaserValue-LaserZeroValue)/5;
+Z_Pos = (LaserValue-LaserZeroValue);
 
  Serial.print(X_Pos);
- Serial.print(" ");   
- Serial.print(Y_Pos);
- Serial.print(" ");
+ Serial.print(", ");   
+ //Serial.print(Y_Pos);
+ //Serial.print(" ");
  Serial.print(Z_Pos);
  Serial.println();
 
